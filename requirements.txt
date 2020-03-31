@@ -1,0 +1,2 @@
+CellNetAnalyzer >= 2017.4
+cplex >= 12.7
