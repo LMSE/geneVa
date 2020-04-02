@@ -63,7 +63,7 @@ no_valve_genes = {'s0001', 'spontanous'};
 
 % notknockable genes
 no_KO_genes = {'s0001', 'spontanous'};
-
+ e
 % Alteratively a single_valve id can be chosen, only this valve will be allowed
 single_valve = '';  % e.g. 'EX_o2(e)'
 
@@ -72,6 +72,8 @@ KO_reacs = {'EX_o2(e)'};
 valve_reacs = {'EX_o2(e)'};
 
 % Calculate and return solution (this is solved via JVM)
+% geneVa-update: remove 'grRules' at the end for traditional
+% MoVE computation
 [kos, valves] = calc_geneVa(cnap, target, 'EX_glc(e)', growth_stage_min_mue, ...
     production_stage_min_yield, production_stage_min_mue, objective_type, ...
     objective_weight, number_of_valves, valve_constraint, solution_type, ...
